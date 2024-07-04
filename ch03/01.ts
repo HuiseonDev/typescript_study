@@ -6,11 +6,10 @@
   }
 
   const todo1: Todo = {
-    title: "할일 1",
-    content: "내용 1",
+    title: '할일 1',
+    content: '내용 1',
   };
-
-  todo1.title = "할일2";
+  todo1.title = '할일2';
   console.log(todo1);
 
   // interface ReadonlyTodo {
@@ -24,15 +23,15 @@
   type ReadonlyTodo = Readonly<Todo>;
 
   const todo2: ReadonlyTodo = {
-    title: "할일 2",
-    content: "내용 2",
+    title: '할일 2',
+    content: '내용 2',
   };
   console.log(todo2);
   // todo2.title = '수정'; // error
 
   const todo3: Readonly<Todo> = {
-    title: "할일 3",
-    content: "내용 3",
+    title: '할일 3',
+    content: '내용 3',
   };
   console.log(todo3);
   // todo3.title = '수정'; // error
